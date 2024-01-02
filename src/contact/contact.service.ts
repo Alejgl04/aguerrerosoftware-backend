@@ -35,7 +35,7 @@ export class ContactService {
       if (sendMailAdmin) {
         resolve({
           ok: true,
-          message: 'Message has been sent successfully',
+          message: 'Thank you! Your submission has been received!',
         });
       }
       return reject(false);

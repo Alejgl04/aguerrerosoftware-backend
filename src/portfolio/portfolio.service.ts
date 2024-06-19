@@ -26,7 +26,7 @@ export class PortfolioService {
   }
 
   async findAll() {
-    return this.portFolioModel.find();
+    return this.portFolioModel.find({}).sort({ creationDateTime: 'desc' });
   }
 
   update(id: number, updatePortfolioDto: UpdatePortfolioDto) {

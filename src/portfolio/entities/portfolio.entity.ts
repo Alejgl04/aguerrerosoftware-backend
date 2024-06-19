@@ -19,6 +19,11 @@ export class Portfolio extends Document {
     index: true,
   })
   urlProject: string;
+  @Prop({
+    type: Date,
+    default: Date.now,
+  })
+  creationDateTime: Date;
 }
 
 export const PortfolioSchema = SchemaFactory.createForClass(Portfolio);
